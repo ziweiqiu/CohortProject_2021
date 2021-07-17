@@ -10,7 +10,11 @@ Example: Finding a global minimum in settings where a classical approach may not
 
 A number of industrial applications have been identified for optimization using the quantum approach outlined here. A broad class of problems is the design of wireless sensor networks (WSNs). These can be used to monitor atmospheric conditions such as temperature, humidity, and wind; environmental conditions such as water quality or levels of noise or pollution; events such as forest fires, landslides, and floods; or the movement of people or animals (for example to detect intruders in a controlled area). As with cell phone tower placement, the optimization problem is to achieve the best coverage with the least number of sensors.
 
-The particular application that we have chosen to focus on is the smart-charging of electric vehicles. The high level of power needed to charge the vehicles, especially with fast-load stations, means that the electricity useage must be carefully handled and optimized. This type of scheduling problem is highly complex and difficult to calculate using classical algorithms; however it can be translated into a UD-MIS problem as shown in (Dalyac et al., 2021).
+The particular application that we have chosen to focus on is the smart-charging of electric vehicles. The high level of power needed to charge the vehicles, especially with fast-load stations, means that the electricity useage must be carefully handled and optimized. This type of scheduling problem is highly complex and difficult to calculate using classical algorithms; however it can be translated into a UD-MIS problem as shown in [(Dalyac et al., 2021)](https://doi.org/10.1140/epjqt/s40507-021-00100-3)
+
+![alt text](https://github.com/ziweiqiu/CohortProject_2021/blob/main/Week2_Rydberg_Atoms/ChargingStation.jpg "EV Charging Station")
+
+Photo: An electric vehicle charging station in Paris, France. Source: [data.gouv.fr](https://www.data.gouv.fr/fr/datasets/belib-reseau-parisien-de-bornes-de-recharges-accelerees-22-kw-ac-dc-pour-vehicules-electriques/)
 
 A set of load tasks is represented as intervals on a timeline. Each task belongs to a certain group, which might represent a company’s vehicle fleet. The aim is to find the subset of these loads which maximizes the number of non-overlapping tasks, while ensuring that at most one load in each group is completed. The first condition means that the competion time is minimized, while the second condition means that no single group is over-represented in the schedule. 
 
